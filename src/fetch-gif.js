@@ -14,4 +14,4 @@ export function addAnimalGif(animal, span) {
 
   request.open("GET", url, true);
   request.send();
-}
+} 
