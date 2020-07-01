@@ -1,6 +1,7 @@
+
 export function addAnimalGif(animal, span) {
   let request = new XMLHttpRequest();
-  const url = `https://api.giphy.com/v1/gifs/search?api_key=${process.env.API_KEY}&q=giraffe&limit=1&offset=0&rating=G&lang=en`;
+  const url = `https://api.giphy.com/v1/gifs/search?api_key=${process.env.API_KEY}&q=${animal}&limit=1&offset=0&rating=G&lang=en`;
 
   request.onreadystatechange = function() {
     if (this.readyState === 4 && this.status === 200) {
@@ -14,6 +15,3 @@ export function addAnimalGif(animal, span) {
   request.open("GET", url, true);
   request.send();
 }
-
-
-let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`);

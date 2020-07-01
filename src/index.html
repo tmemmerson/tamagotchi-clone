@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script type="text/javascript" src="hangman.js"></script>
-  <script type="text/javascript" src="bundle.js"></script>
-  <title>Hangman</title>
-</head>
-<body>
-  <div class="container">
-    <h1>Get weather conditions from anywhere</h1>
-    <label for="location" type="text"></label>
-    <button class="btn-success" id="weatherLocation">Get Current Temp and Humidity</button>
-    <div class="showErrors"></div>
-    <div class="showHumidity"></div>
-    <div class="showTemp"></div>
-  </div>
-</body>
+    <title>Tamagochi</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="page-header">
+        <h1>Tama-Clone!</h1>
+        <p>Your fun-time pet that is legally distinct from other fun-time pets!</p>
+      </div>
+      
+      <div class="form-group">
+        <label for="namePet">Name Your New Friend!</label>
+        <input type=text name="namePet" id="namePet" class="form-control">
+        <p class='errorMessage'></p>
+      </div>
+      <div class="form-group">
+        <label for="petTypeSelector">What Type is Your New Friend?</label>
+        <select name="petTypeSelector" id="petTypeSelector">
+          <option value='giraffe'>Giraffe</option>
+          <option value='bunny'>Bunny</option>
+          <option value='penguin'>Penguin</option>
+          <option value='lion'>Lion</option>
+        </select>
+      </div>
+      <button class="btn btn-info" id="addPet">Add a New Pet!</button>
+
+      <ul id="petList">
+
+      </ul>
+
+      <button class='btn btn-info' id='showRules'>Show Me The Rules!</button>
+      <div id='rules'>
+        <p>Name your pet and pick a type to add him to your roster! But be careful- if you don't attend to your pet's needs, they'll die! Also, tending to their needs makes them needier! Good luck!</p>
+      </div>
+    </div>
+  </body>
 </html>
