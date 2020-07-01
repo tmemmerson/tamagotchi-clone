@@ -1,7 +1,7 @@
 {
-  "name": "Hangman",
+  "name": "Tamagotchi Clone",
   "version": "1.0.0",
-  "description": "hangman-dino-ipsum-API",
+  "description": "pet care app modeled from tamagotchi",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
