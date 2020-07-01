@@ -21,7 +21,8 @@ module.exports = {
       title: 'project-name',
       template: './src/index.html',
       inject: 'body'
-    })
+    }),
+    new Dotenv(),
   ],
   module: {
     rules: [
